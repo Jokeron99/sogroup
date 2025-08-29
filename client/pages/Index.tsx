@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { CheckCircle2, Gem, ShieldCheck, User } from "lucide-react";
 import Prices from "../components/sections/Prices";
+import Technologies from "../components/sections/Technologies";
 
 export default function Index() {
   const images = useMemo(
@@ -84,7 +85,7 @@ export default function Index() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
-            { t: "Высокое качество", s: "Опытные бригады" },
+            { t: "Высокое качество", s: "Опытные ��ригады" },
             { t: "Гарантия", s: "до 5 лет" },
             { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
