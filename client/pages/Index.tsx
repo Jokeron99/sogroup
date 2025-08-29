@@ -221,27 +221,9 @@ export default function Index() {
       </section>
 
       {/* PRICES */}
-      <section id="prices" className="container pt-[--section-gap]">
-        <h2 className="text-3xl font-bold mb-8">Цены на ремонт</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { title: "Косметический", price: "от 6 000 ₽/м²", features: ["Легкие работы", "Базовые материалы", "Срок от 14 дней"], featured: false },
-            { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чистовые материалы", "Срок от 30 дней"], featured: true },
-            { title: "Дизайнерский", price: "от 15 000 ₽/м²", features: ["Авторский надзор", "Премиум-материалы", "Срок от 45 дней"], featured: false },
-          ].map((p, i) => (
-            <div key={i} className={`rounded-xl border p-6 shadow-soft ${p.featured ? 'bg-primary/5 border-primary/30' : 'bg-card border-input'}`}>
-              <div className="text-lg font-semibold">{p.title}</div>
-              <div className="mt-2 text-2xl font-extrabold text-primary">{p.price}</div>
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                {p.features.map((f, idx) => (
-                  <li key={idx} className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/> {f}</li>
-                ))}
-              </ul>
-              <button className="mt-6 inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-4 py-2 font-medium hover:opacity-90 transition">Заказать</button>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Rebuilt as a dedicated component for pixel precision */}
+      {/**/}
+      <Prices />
 
       {/* CTA */}
       <section id="cta" className="container pt-[--section-gap]">
