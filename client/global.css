@@ -1,5 +1,5 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,43 +12,38 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Brand palette (HSL) */
-    --graphite: 220 14% 12%;
-    --sand: 38 30% 82%;
-    --warm: 30 8% 62%;
-    --bronze: 30 60% 45%;
-    --bronze-foreground: 0 0% 100%;
-
+    /* Blue/white brand (Behance ref) */
     --background: 0 0% 100%;
-    --foreground: var(--graphite);
+    --foreground: 220 16% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: var(--graphite);
+    --card-foreground: 220 16% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: var(--graphite);
+    --popover-foreground: 220 16% 14%;
 
-    --primary: var(--bronze);
-    --primary-foreground: var(--bronze-foreground);
+    --primary: 205 90% 54%; /* vivid blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: var(--sand);
-    --secondary-foreground: var(--graphite);
+    --secondary: 205 100% 97%; /* very light blue */
+    --secondary-foreground: 220 16% 20%;
 
-    --muted: var(--sand);
-    --muted-foreground: var(--warm);
+    --muted: 210 16% 94%;
+    --muted-foreground: 220 10% 40%;
 
-    --accent: var(--sand);
-    --accent-foreground: var(--graphite);
+    --accent: 205 90% 54%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 12% 88%;
-    --input: 30 12% 88%;
-    --ring: var(--bronze);
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 205 90% 54%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Sidebar (unused) */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -60,39 +55,33 @@
   }
 
   .dark {
-    --graphite: 0 0% 93%;
-    --sand: 38 30% 25%;
-    --warm: 30 8% 70%;
-    --bronze: 30 60% 50%;
-    --bronze-foreground: 0 0% 100%;
+    --background: 220 14% 8%;
+    --foreground: 0 0% 100%;
 
-    --background: 220 14% 6%;
-    --foreground: var(--graphite);
+    --card: 220 14% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --card: 220 14% 8%;
-    --card-foreground: var(--graphite);
+    --popover: 220 14% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --popover: 220 14% 8%;
-    --popover-foreground: var(--graphite);
+    --primary: 205 90% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --primary: var(--bronze);
-    --primary-foreground: var(--bronze-foreground);
+    --secondary: 220 10% 16%;
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 220 10% 14%;
-    --secondary-foreground: var(--graphite);
+    --muted: 220 10% 18%;
+    --muted-foreground: 0 0% 80%;
 
-    --muted: 220 10% 14%;
-    --muted-foreground: var(--warm);
-
-    --accent: 220 10% 14%;
-    --accent-foreground: var(--graphite);
+    --accent: 205 90% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 10% 18%;
-    --input: 220 10% 18%;
-    --ring: var(--bronze);
+    --border: 220 10% 22%;
+    --input: 220 10% 22%;
+    --ring: 205 90% 60%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -112,5 +101,6 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
   }
 }
