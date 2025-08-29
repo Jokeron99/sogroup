@@ -14,10 +14,13 @@ export default function Prices() {
         {cards.map((c, i) => (
           <article
             key={i}
-            className={`relative overflow-hidden rounded-2xl border bg-white p-6 shadow-[0_10px_30px_rgba(0,0,0,.06),0_2px_8px_rgba(0,0,0,.04)] ${
+            className={`relative overflow-hidden rounded-2xl border bg-white p-6 shadow-[0_16px_50px_rgba(0,0,0,.08)] ${
               c.featured ? "ring-1 ring-primary/30" : "border-input"
             }`}
           >
+            {c.featured && (
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#ff5c5c] text-white text-xs px-3 py-1 shadow">Хит</div>
+            )}
             <div className="text-lg font-semibold">{c.title}</div>
             <div className="mt-2 text-2xl font-extrabold text-primary">{c.price}</div>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
@@ -28,7 +31,7 @@ export default function Prices() {
                 </li>
               ))}
             </ul>
-            <button className="mt-6 inline-flex items-center justify-center rounded-full px-5 py-2 text-white bg-primary hover:opacity-90 transition shadow-soft">
+            <button className="mt-6 inline-flex items-center justify-center rounded-full px-5 py-2 text-white bg-gradient-to-b from-sky-400 to-blue-600 hover:brightness-105 transition shadow-[0_8px_18px_rgba(29,78,216,.25)]">
               Заказать
             </button>
           </article>
