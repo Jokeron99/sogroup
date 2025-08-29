@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import { CheckCircle2, Gem, ShieldCheck, User } from "lucide-react";
-import SpriteSection from "../components/SpriteSection";
 
 export default function Index() {
   const images = useMemo(
@@ -57,7 +56,7 @@ export default function Index() {
               ремонт квартир в Москве и МО
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
-              РЕМОНТ КВАРТИР И ДОМО��
+              РЕМОНТ КВАРТИР И ДОМОВ
             </h1>
             <p className="mt-4 text-muted-foreground">
               Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
@@ -79,6 +78,23 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* HERO tiles row */}
+      <div className="container -mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {[
+            { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
+            { t: "Высокое качество", s: "Опытные бригады" },
+            { t: "Гарантия", s: "до 5 лет" },
+            { t: "Сметы сегодня", s: "3 варианта" },
+          ].map((i, idx) => (
+            <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
+              <div className="text-sm font-semibold">{i.t}</div>
+              <div className="text-xs text-muted-foreground mt-1">{i.s}</div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* CALCULATOR (ref mimic) */}
       <section id="calc" className="container pt-[--section-gap]">
@@ -122,9 +138,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Decorative slice from reference */}
-      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={220} offsetY={1150} className="w-full" />
 
       {/* GALLERY */}
       <section id="works" className="container pt-[--section-gap]">
@@ -182,9 +195,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Decorative slice behind prices/tools */}
-      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={360} offsetY={4200} className="w-full" />
-
       {/* TESTIMONIALS */}
       <section id="testimonials" className="container pt-[--section-gap]">
         <h2 className="font-display text-3xl sm:text-4xl mb-8">Отзывы</h2>
@@ -196,7 +206,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три вар��анта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая б��онза."
+            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
           />
           <DialogCard
             role="Клиент"
@@ -216,7 +226,7 @@ export default function Index() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { title: "Косметический", price: "от 6 000 ₽/м²", features: ["Легкие работы", "Базовые материалы", "Срок от 14 дней"], featured: false },
-            { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чи��товые материалы", "Срок от 30 дней"], featured: true },
+            { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чистовые материалы", "Срок от 30 дней"], featured: true },
             { title: "Дизайнерский", price: "от 15 000 ₽/м²", features: ["Авторский надзор", "Премиум-материалы", "Срок от 45 дней"], featured: false },
           ].map((p, i) => (
             <div key={i} className={`rounded-xl border p-6 shadow-soft ${p.featured ? 'bg-primary/5 border-primary/30' : 'bg-card border-input'}`}>
@@ -233,9 +243,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Decorative slice with phone mockup */}
-      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={500} offsetY={6100} className="w-full" />
-
       {/* CTA */}
       <section id="cta" className="container pt-[--section-gap]">
         <div className="relative overflow-hidden rounded-2xl border border-border bg-secondary/40">
@@ -243,13 +250,13 @@ export default function Index() {
           <div className="p-8 md:p-12 grid md:grid-cols-2 gap-10">
             <div>
               <h3 className="font-display text-2xl sm:text-3xl">
-                Оставьте заявку — и мы разработаем интерьер беспл��тно
+                Оставьте заявку — и мы разработаем интерьер бесплатно
               </h3>
               <p className="mt-4 text-muted-foreground max-w-prose">
                 Бриф, планировочные решения и концепция в подарок. Начните с короткой заявки — мы свяжемся в течение одного рабочего дня.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама �� лишних звонков</li>
+                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама и лишних звонков</li>
                 <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Закрепим условия и сроки</li>
               </ul>
             </div>
@@ -284,7 +291,7 @@ export default function Index() {
                 Отправить заявку
               </button>
               <p className="text-xs text-muted-foreground">
-                Нажимая кно��ку, вы соглашаетесь с условиями обработки персональных данных
+                Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных
               </p>
             </form>
           </div>
