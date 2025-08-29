@@ -7,7 +7,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Современная гостиная с панорамными окнами",
+        alt: "Современная гостиная с панорамными окн��ми",
       },
       {
         src:
@@ -17,7 +17,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/7546636/pexels-photo-7546636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Спальня с тёплой атмосфе��ой и мягким светом",
+        alt: "Спальня с тёплой атмосферой и мягким светом",
       },
       {
         src:
@@ -45,7 +45,7 @@ export default function Index() {
         className="relative min-h-[80vh] flex items-end"
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 30%, transparent 55%), url(https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2Fd9fe1fea66c048098065eef567aa370f?format=webp&width=1600)",
+            "linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 30%, transparent 55%), url(https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -146,14 +146,14 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
+            text="Мы предложим три вар��анта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
           />
           <DialogCard
             role="Клиент"
             text="Спасибо за деликатный подход — всё чётко и без суеты. Соседи уже спрашивают контакты."
           />
           <DialogCard
-            role="Д��зайнер"
+            role="Дизайнер"
             accent
             text="Рады, что получилось передать ваш характер. Всегда на связи, если захотите обновить детали."
           />
@@ -166,7 +166,7 @@ export default function Index() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { title: "Косметический", price: "от 6 000 ₽/м²", features: ["Легкие работы", "Базовые материалы", "Срок от 14 дней"], featured: false },
-            { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чистовые материалы", "Срок от 30 дней"], featured: true },
+            { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чи��товые материалы", "Срок от 30 дней"], featured: true },
             { title: "Дизайнерский", price: "от 15 000 ₽/м²", features: ["Авторский надзор", "Премиум-материалы", "Срок от 45 дней"], featured: false },
           ].map((p, i) => (
             <div key={i} className={`rounded-xl border p-6 shadow-soft ${p.featured ? 'bg-primary/5 border-primary/30' : 'bg-card border-input'}`}>
