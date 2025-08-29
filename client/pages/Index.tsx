@@ -43,15 +43,12 @@ export default function Index() {
     <div className="[--section-gap:5rem]">
       {/* HERO (Behance screenshot background) */}
       <section
-        className="relative min-h-[80vh] flex items-end"
-        style={{
-          backgroundImage:
-            "linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 30%, transparent 55%), url(https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="relative min-h-[80vh] flex items-end overflow-hidden"
       >
-        <div className="container pb-16">
+        {/* Decorative crops from the provided sprite to match reference, kept as real <img> */}
+        <img src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" alt="" className="absolute inset-0 w-full h-full object-cover opacity-70"/>
+        <div className="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-white to-transparent"/>
+        <div className="container pb-16 relative">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               ремонт квартир в Москве и МО
@@ -105,7 +102,7 @@ export default function Index() {
             <p className="text-sm text-muted-foreground mt-2">Заполните 3 поля — займет до 2 минут</p>
             <form className="mt-6 grid sm:grid-cols-2 gap-4">
               <label className="text-sm">
-                <span className="mb-1 block text-muted-foreground">��ип помещения</span>
+                <span className="mb-1 block text-muted-foreground">Тип помещения</span>
                 <select className="w-full rounded-md border border-input bg-transparent px-3 py-2">
                   <option>Квартира</option>
                   <option>Дом</option>
@@ -181,7 +178,7 @@ export default function Index() {
           <Benefit
             icon={<Gem className="h-6 w-6" />}
             title="Премиум-материалы"
-            text="Используем благородные покрытия, камень, массив, латунь и авторский свет."
+            text="Используем благородные покрытия, камень, массив, латунь и ав��орский свет."
           />
           <Benefit
             icon={<User className="h-6 w-6" />}
@@ -207,7 +204,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
+            text="Мы предложим три варианта планировки и подбор материалов: тёплый каме��ь, текстурное дерево, мягкая бронза."
           />
           <DialogCard
             role="Клиент"
@@ -239,7 +236,7 @@ export default function Index() {
                 Бриф, планировочные решения и концепция в подарок. Начните с короткой заявки — мы свяжемся в течение одного рабочего дня.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама и лишни�� звонков</li>
+                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама и лишних звонков</li>
                 <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Закрепим условия и сроки</li>
               </ul>
             </div>
