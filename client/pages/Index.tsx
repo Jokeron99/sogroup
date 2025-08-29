@@ -1,62 +1,252 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
+import { CheckCircle2, Gem, ShieldCheck, User } from "lucide-react";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
-
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
-  };
+  const images = useMemo(
+    () => [
+      {
+        src:
+          "https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Современная гостиная с панорамными окнами",
+      },
+      {
+        src:
+          "https://images.pexels.com/photos/6587896/pexels-photo-6587896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Кухня в минималистичном стиле премиум",
+      },
+      {
+        src:
+          "https://images.pexels.com/photos/7546636/pexels-photo-7546636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Спальня с тёплой атмосферой и мягким светом",
+      },
+      {
+        src:
+          "https://images.pexels.com/photos/19141078/pexels-photo-19141078.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Ванная комната с мрамором и латунью",
+      },
+      {
+        src:
+          "https://images.pexels.com/photos/12277295/pexels-photo-12277295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Уютная современная спальня в натуральных оттенках",
+      },
+      {
+        src:
+          "https://images.pexels.com/photos/6899356/pexels-photo-6899356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
+        alt: "Интерьер с арт-объектами и зеркалом",
+      },
+    ],
+    [],
+  );
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
+    <div className="[--section-gap:5rem]">
+      {/* HERO */}
+      <section
+        className="relative min-h-[80vh] flex items-end"
+        style={{
+          backgroundImage:
+            "linear-gradient(to top, hsl(var(--background)) 0%, transparent 35%), url(https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2000)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container pb-20">
+          <div className="max-w-3xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-muted-foreground mb-6">
+              Бутик-студия дизайнерского ремонта
+            </div>
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
+              Ремонт, который отражает ваш характер
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
+              Чистые линии, дорогие материалы и персональный подход. Мы
+              создаём пространства, которые говорят за вас.
+            </p>
+            <div className="mt-10 flex items-center gap-4">
+              <a
+                href="#cta"
+                className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 shadow-soft hover:opacity-90 transition"
+              >
+                Оставить заявку
+              </a>
+              <a
+                href="#portfolio"
+                className="inline-flex items-center rounded-full px-6 py-3 border border-border hover:border-foreground/40 transition"
+              >
+                Портфолио
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section id="portfolio" className="container pt-[--section-gap]">
+        <div className="flex items-end justify-between gap-6">
+          <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
+          <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
+            Тонкие пропорции, продуманная геометрия и благородная палитра
+            материалов. Каждая деталь имеет значение.
+          </p>
+        </div>
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {images.map((img, i) => (
+            <figure
+              key={i}
+              className="group overflow-hidden rounded-xl bg-card shadow-soft border border-border"
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <figcaption className="px-4 py-3 flex items-center justify-between text-sm">
+                <span className="text-foreground/80">Проект №{i + 1}</span>
+                <span className="text-muted-foreground">Квартира · 120 м²</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* BENEFITS */}
+      <section id="benefits" className="container pt-[--section-gap]">
+        <div className="grid md:grid-cols-4 gap-6">
+          <Benefit
+            icon={<CheckCircle2 className="h-6 w-6" />}
+            title="Работаем под ключ"
+            text="От идеи и проектирования до строительно-отделочных работ и комплектации."
+          />
+          <Benefit
+            icon={<Gem className="h-6 w-6" />}
+            title="Премиум-материалы"
+            text="Используем благородные покрытия, камень, массив, латунь и авторский свет."
+          />
+          <Benefit
+            icon={<User className="h-6 w-6" />}
+            title="Личный дизайнер"
+            text="Один куратор ведёт проект, встречается, подбирает и контролирует качество."
+          />
+          <Benefit
+            icon={<ShieldCheck className="h-6 w-6" />}
+            title="Гарантия до 5 лет"
+            text="Фиксируем сроки и даём расши��енную гарантию на отделочные работы."
+          />
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className="container pt-[--section-gap]">
+        <h2 className="font-display text-3xl sm:text-4xl mb-8">Отзывы</h2>
+        <div className="grid lg:grid-cols-2 gap-6">
+          <DialogCard
+            role="Клиент"
+            text="Мы хотим интерьер без лишнего — тёплый, но минималистичный."
+          />
+          <DialogCard
+            role="Дизайнер"
+            accent
+            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
+          />
+          <DialogCard
+            role="Клиент"
+            text="Спасибо за деликатный подход — всё чётко и без суеты. Соседи уже спрашивают контакты."
+          />
+          <DialogCard
+            role="Дизайнер"
+            accent
+            text="Рады, что получилось передать ваш характер. Всегда на связ��, если захотите обновить детали."
+          />
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="cta" className="container pt-[--section-gap]">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-secondary/40">
+          <div className="absolute inset-0 opacity-20 pointer-events-none" style={{ background: "radial-gradient(800px 300px at 10% 0%, hsl(var(--sand)) 0%, transparent 50%)" }} />
+          <div className="p-8 md:p-12 grid md:grid-cols-2 gap-10">
+            <div>
+              <h3 className="font-display text-2xl sm:text-3xl">
+                Оставьте заявку — и мы разработаем интерьер бесплатно
+              </h3>
+              <p className="mt-4 text-muted-foreground max-w-prose">
+                Бриф, планировочные решения и концепция в подарок. Начните с короткой заявки — мы свяжемся в течение одного рабочего дня.
+              </p>
+              <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама �� лишних звонков</li>
+                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Закрепим условия и сроки</li>
+              </ul>
+            </div>
+            <form className="bg-card p-6 rounded-xl shadow-soft border border-border grid grid-cols-1 gap-4">
+              <label className="text-sm">
+                <span className="mb-1 block text-muted-foreground">Ваше имя</span>
+                <input
+                  type="text"
+                  required
+                  placeholder="Иван"
+                  className="w-full rounded-md border border-border bg-transparent px-4 py-2 outline-none focus:ring-2 focus:ring-primary/40"
+                />
+              </label>
+              <label className="text-sm">
+                <span className="mb-1 block text-muted-foreground">Телефон</span>
+                <input
+                  type="tel"
+                  required
+                  placeholder="+7 (___) ___-__-__"
+                  className="w-full rounded-md border border-border bg-transparent px-4 py-2 outline-none focus:ring-2 focus:ring-primary/40"
+                />
+              </label>
+              <label className="text-sm">
+                <span className="mb-1 block text-muted-foreground">E-mail</span>
+                <input
+                  type="email"
+                  placeholder="name@example.com"
+                  className="w-full rounded-md border border-border bg-transparent px-4 py-2 outline-none focus:ring-2 focus:ring-primary/40"
+                />
+              </label>
+              <button type="submit" className="mt-2 inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 font-medium shadow-soft hover:opacity-90 transition">
+                Отправить заявку
+              </button>
+              <p className="text-xs text-muted-foreground">
+                Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* SPACER to footer */}
+      <div className="h-[--section-gap]"></div>
+    </div>
+  );
+}
+
+function Benefit({
+  icon,
+  title,
+  text,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  text: string;
+}) {
+  return (
+    <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+      <div className="h-10 w-10 rounded-full border border-border flex items-center justify-center text-primary mb-4">
+        {icon}
       </div>
+      <div className="font-medium">{title}</div>
+      <p className="mt-2 text-sm text-muted-foreground">{text}</p>
+    </div>
+  );
+}
+
+function DialogCard({ role, text, accent }: { role: string; text: string; accent?: boolean }) {
+  return (
+    <div className={`rounded-2xl border p-6 shadow-soft ${accent ? "bg-secondary/50 border-border" : "bg-card border-border"}`}>
+      <div className="text-xs uppercase tracking-widest text-muted-foreground">{role}</div>
+      <p className="mt-2 text-lg leading-7">{text}</p>
     </div>
   );
 }
