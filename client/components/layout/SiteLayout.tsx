@@ -17,7 +17,7 @@ export default function SiteLayout() {
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
             <a href="#contacts" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </nav>
-          <a href="#cta" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-soft">
+          <a href="#cta" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-white bg-gradient-to-b from-sky-400 to-blue-600 hover:brightness-105 transition shadow-[0_8px_18px_rgba(29,78,216,.25)]">
             <span>Оставить заявку</span>
           </a>
         </div>
