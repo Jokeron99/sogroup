@@ -11,12 +11,13 @@ export default function SiteLayout() {
             <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">ремонт</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">Проекты</a>
-            <a href="#benefits" className="text-muted-foreground hover:text-foreground transition-colors">Преимущества</a>
+            <a href="#calc" className="text-muted-foreground hover:text-foreground transition-colors">Калькулятор</a>
+            <a href="#works" className="text-muted-foreground hover:text-foreground transition-colors">Работы</a>
+            <a href="#prices" className="text-muted-foreground hover:text-foreground transition-colors">Цены</a>
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
             <a href="#contacts" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </nav>
-          <a href="#cta" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-soft">
+          <a href="#cta" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-soft">
             <span>Оставить заявку</span>
           </a>
         </div>
@@ -29,7 +30,7 @@ export default function SiteLayout() {
       <footer id="contacts" className="border-t border-border/70 mt-24">
         <div className="container py-16 grid md:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <div className="text-2xl font-display">Forma Atelier</div>
+            <div className="text-2xl font-semibold">TrustRemont</div>
             <p className="text-sm text-muted-foreground max-w-xs">Нас рекомендуют тем, кто ценит качество и вкус. Дизайнерский ремонт квартир и домов под ключ.</p>
           </div>
           <div>
@@ -59,7 +60,7 @@ export default function SiteLayout() {
         </div>
         <div className="border-t border-border/70 py-6 text-xs text-muted-foreground">
           <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>© {new Date().getFullYear()} Forma Atelier. Все права защищены.</div>
+            <div>© {new Date().getFullYear()} TrustRemont. Все права защищены.</div>
             <div className="flex items-center gap-6">
               <a href="#" className="hover:underline">Политика конфиденциальности</a>
               <a href="#" className="hover:underline">Договор оферты</a>
