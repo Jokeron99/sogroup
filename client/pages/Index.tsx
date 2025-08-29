@@ -9,7 +9,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Современная гостиная с панорамными окн��ми",
+        alt: "Современная гостиная с панорамными окнами",
       },
       {
         src:
@@ -29,7 +29,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/12277295/pexels-photo-12277295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Уютная современная спальня в натуральных оттенках",
+        alt: "Уютная современная спальня в натурал��ных оттенках",
       },
       {
         src:
@@ -51,8 +51,8 @@ export default function Index() {
         <div className="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-white to-transparent"/>
         <div className="container pb-16 relative">
           <div className="max-w-2xl">
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
-              ремонт квартир в Москве и МО
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-2">
+              РЕМОНТ КВАРТИР В МОСКВЕ И МО
             </div>
             <div className="inline-block rounded-2xl bg-white/80 backdrop-blur px-5 py-3 shadow-[0_10px_30px_rgba(0,0,0,.07)]">
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
@@ -81,13 +81,13 @@ export default function Index() {
       </section>
 
       {/* HERO tiles row */}
-      <div className="container -mt-8">
+      <div className="container -mt-6">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
             { t: "Высокое качество", s: "Опытные бригады" },
             { t: "Гарантия", s: "до 5 лет" },
-            { t: "Сметы сегодня", s: "3 ��арианта" },
+            { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
             <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
               <div className="text-sm font-semibold">{i.t}</div>
@@ -146,7 +146,7 @@ export default function Index() {
           <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
           <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
             Тонкие пропорции, продуманная геометрия и благородная палитра
-            мат��риалов. Каждая деталь имеет значение.
+            материалов. Каждая деталь имеет значение.
           </p>
         </div>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -191,7 +191,7 @@ export default function Index() {
           <Benefit
             icon={<ShieldCheck className="h-6 w-6" />}
             title="Гарантия до 5 лет"
-            text="Фиксируем сроки и даём расширенную гарантию на отделочные работы."
+            text="Фиксируем сроки и даём расширенную гарантию на отдел��чные работы."
           />
         </div>
       </section>
@@ -218,7 +218,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Рады, что получилось передать ваш характер. Всегда на связи, если захотите обновить детали."
+            text="Рады, что получилось передать ваш характер. Всегда на связи, если зах��тите обновить детали."
           />
         </div>
       </section>
