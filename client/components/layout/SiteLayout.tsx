@@ -7,8 +7,8 @@ export default function SiteLayout() {
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border/70">
         <div className="container flex items-center justify-between h-16">
           <Link to="/" className="group inline-flex items-baseline gap-2">
-            <span className="text-xl font-semibold tracking-tight">TrustRemont</span>
-            <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">ремонт</span>
+            <span className="text-xl font-semibold tracking-tight">SO Group</span>
+            <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">group</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm">
             <a href="#calc" className="text-muted-foreground hover:text-foreground transition-colors">Калькулятор</a>
@@ -30,14 +30,14 @@ export default function SiteLayout() {
       <footer id="contacts" className="border-t border-border/70 mt-24">
         <div className="container py-16 grid md:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <div className="text-2xl font-semibold">TrustRemont</div>
+            <div className="text-2xl font-semibold">SO Group</div>
             <p className="text-sm text-muted-foreground max-w-xs">Нас рекомендуют тем, кто ценит качество и вкус. Дизайнерский ремонт квартир и домов под ключ.</p>
           </div>
           <div>
             <div className="text-sm uppercase tracking-wider text-muted-foreground mb-4">Контакты</div>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-foreground/70"/><a href="tel:+74951234567" className="hover:underline">+7 (495) 123-45-67</a></li>
-              <li><a href="mailto:hello@forma-atelier.ru" className="hover:underline">hello@forma-atelier.ru</a></li>
+              <li><a href="mailto:hello@sogroup.ru" className="hover:underline">hello@sogroup.ru</a></li>
               <li>Москва, Большая Никитская, 15</li>
             </ul>
           </div>
@@ -60,7 +60,7 @@ export default function SiteLayout() {
         </div>
         <div className="border-t border-border/70 py-6 text-xs text-muted-foreground">
           <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>© {new Date().getFullYear()} TrustRemont. Все права защищены.</div>
+            <div>© {new Date().getFullYear()} SO Group. Все права защищены.</div>
             <div className="flex items-center gap-6">
               <a href="#" className="hover:underline">Политика конфиденциальности</a>
               <a href="#" className="hover:underline">Договор оферты</a>
