@@ -7,8 +7,8 @@ export default function SiteLayout() {
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border/70">
         <div className="container flex items-center justify-between h-16">
           <Link to="/" className="group inline-flex items-baseline gap-2">
-            <span className="text-xl font-display tracking-tight">Forma Atelier</span>
-            <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">Studio</span>
+            <span className="text-xl font-semibold tracking-tight">TrustRemont</span>
+            <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">ремонт</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm">
             <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">Проекты</a>
