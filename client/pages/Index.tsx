@@ -53,10 +53,12 @@ export default function Index() {
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
               ремонт квартир в Москве и МО
             </div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
+            <div className="inline-block rounded-2xl bg-white/80 backdrop-blur px-5 py-3 shadow-[0_10px_30px_rgba(0,0,0,.07)]">
+              <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
               РЕМОНТ КВАРТИР И ДОМОВ
-            </h1>
-            <p className="mt-4 text-muted-foreground">
+              </h1>
+            </div>
+            <p className="mt-4 text-muted-foreground bg-white/80 inline-block px-4 py-2 rounded-full">
               Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
             </p>
             <div className="mt-8 flex items-center gap-3">
@@ -126,7 +128,7 @@ export default function Index() {
           </div>
           <div className="rounded-xl border border-input bg-secondary p-6">
             <h4 className="font-semibold">Получите сметы уже сегодня</h4>
-            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
+            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сме��ы на почту</p>
             <form className="mt-4 grid gap-3">
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Телефон"/>
@@ -178,7 +180,7 @@ export default function Index() {
           <Benefit
             icon={<Gem className="h-6 w-6" />}
             title="Премиум-материалы"
-            text="Используем благородные покрытия, камень, массив, латунь и ав��орский свет."
+            text="Используем благородные покрытия, камень, массив, латунь и авторский свет."
           />
           <Benefit
             icon={<User className="h-6 w-6" />}
@@ -204,7 +206,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три варианта планировки и подбор материалов: тёплый каме��ь, текстурное дерево, мягкая бронза."
+            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
           />
           <DialogCard
             role="Клиент"
