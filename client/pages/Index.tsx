@@ -86,7 +86,7 @@ export default function Index() {
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
             { t: "Высокое качество", s: "Опытные бригады" },
-            { t: "Гаран��ия", s: "до 5 лет" },
+            { t: "Гарант��я", s: "до 5 лет" },
             { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
             <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
