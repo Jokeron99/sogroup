@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { CheckCircle2, Gem, ShieldCheck, User } from "lucide-react";
+import Prices from "../components/sections/Prices";
 
 export default function Index() {
   const images = useMemo(
@@ -179,7 +180,7 @@ export default function Index() {
           />
           <Benefit
             icon={<Gem className="h-6 w-6" />}
-            title="Премиум-материалы"
+            title="Прем��ум-материалы"
             text="Используем благородные покрытия, камень, массив, латунь и авторский свет."
           />
           <Benefit
