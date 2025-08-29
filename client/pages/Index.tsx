@@ -29,7 +29,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/12277295/pexels-photo-12277295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Уютная современная спальня в натурал��ных оттенках",
+        alt: "Уютная современная спальня в натуральных оттенках",
       },
       {
         src:
@@ -85,7 +85,7 @@ export default function Index() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
-            { t: "Высокое качество", s: "Опытные бригады" },
+            { t: "Высокое качеств��", s: "Опытные бригады" },
             { t: "Гарантия", s: "до 5 лет" },
             { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
