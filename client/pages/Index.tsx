@@ -65,7 +65,7 @@ export default function Index() {
             <div className="mt-8 flex items-center gap-3">
               <a
                 href="#cta"
-                className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 shadow-soft hover:opacity-90 transition"
+                className="inline-flex items-center rounded-full text-white bg-gradient-to-b from-sky-400 to-blue-600 px-6 py-3 hover:brightness-105 transition shadow-[0_8px_18px_rgba(29,78,216,.25)]"
               >
                 Оставить заявку
               </a>
@@ -81,7 +81,7 @@ export default function Index() {
       </section>
 
       {/* HERO tiles row */}
-      <div className="container -mt-10">
+      <div className="container -mt-8">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
@@ -105,7 +105,7 @@ export default function Index() {
             <p className="text-sm text-muted-foreground mt-2">Заполните 3 поля — займет до 2 минут</p>
             <form className="mt-6 grid sm:grid-cols-2 gap-4">
               <label className="text-sm">
-                <span className="mb-1 block text-muted-foreground">Тип помещения</span>
+                <span className="mb-1 block text-muted-foreground">��ип помещения</span>
                 <select className="w-full rounded-md border border-input bg-transparent px-3 py-2">
                   <option>Квартира</option>
                   <option>Дом</option>
@@ -180,7 +180,7 @@ export default function Index() {
           />
           <Benefit
             icon={<Gem className="h-6 w-6" />}
-            title="Прем��ум-материалы"
+            title="Премиум-материалы"
             text="Используем благородные покрытия, камень, массив, латунь и авторский свет."
           />
           <Benefit
@@ -239,7 +239,7 @@ export default function Index() {
                 Бриф, планировочные решения и концепция в подарок. Начните с короткой заявки — мы свяжемся в течение одного рабочего дня.
               </p>
               <ul className="mt-6 space-y-2 text-sm text-muted-foreground">
-                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама и лишних звонков</li>
+                <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Без спама и лишни�� звонков</li>
                 <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary inline-block"/>Закрепим условия и сроки</li>
               </ul>
             </div>
