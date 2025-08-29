@@ -34,7 +34,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/6899356/pexels-photo-6899356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Интерьер с арт-объектами и зеркалом",
+        alt: "Интерьер с арт-об��ектами и зеркалом",
       },
     ],
     [],
@@ -60,7 +60,7 @@ export default function Index() {
               </h1>
             </div>
             <p className="mt-4 text-muted-foreground bg-white/80 inline-block px-4 py-2 rounded-full">
-              Калькулято�� стоимости за 2 минуты. Получите сметы уже сегодня.
+              Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
             </p>
             <div className="mt-8 flex items-center gap-3">
               <a
@@ -85,7 +85,7 @@ export default function Index() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
-            { t: "Высокое качеств��", s: "Опытные бригады" },
+            { t: "Высокое качество", s: "Опытные бригад��" },
             { t: "Гарантия", s: "до 5 лет" },
             { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
