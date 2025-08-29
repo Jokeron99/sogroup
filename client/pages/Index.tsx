@@ -34,7 +34,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/6899356/pexels-photo-6899356.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Интерьер с арт-об��ектами и зеркалом",
+        alt: "Интерьер с арт-объектами и зеркалом",
       },
     ],
     [],
@@ -85,7 +85,7 @@ export default function Index() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
-            { t: "Высокое качество", s: "Опытные бригад��" },
+            { t: "Высокое качество", s: "Опытные бригады" },
             { t: "Гарантия", s: "до 5 лет" },
             { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
@@ -191,7 +191,7 @@ export default function Index() {
           <Benefit
             icon={<ShieldCheck className="h-6 w-6" />}
             title="Гарантия до 5 лет"
-            text="Фиксируем сроки и даём расширенную гарантию на отдел��чные работы."
+            text="Фиксируем сроки и даём расширенную гарантию на отделочные работы."
           />
         </div>
       </section>
