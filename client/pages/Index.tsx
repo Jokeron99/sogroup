@@ -47,7 +47,7 @@ export default function Index() {
         className="relative min-h-[80vh] flex items-end overflow-hidden"
       >
         {/* Decorative crops from the provided sprite to match reference, kept as real <img> */}
-        <img src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" alt="" className="absolute inset-0 w-full h-full object-cover opacity-70"/>
+        <img src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2Ff0b7eae381cd46b29eb27d5154cb3b32?format=webp&width=1920" alt="" className="absolute inset-0 w-full h-full object-cover opacity-70"/>
         <div className="absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-white to-transparent"/>
         <div className="container pb-16 relative">
           <div className="max-w-2xl">
@@ -60,7 +60,7 @@ export default function Index() {
               </h1>
             </div>
             <p className="mt-4 text-muted-foreground bg-white/80 inline-block px-4 py-2 rounded-full">
-              Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
+              Калькулято�� стоимости за 2 минуты. Получите сметы уже сегодня.
             </p>
             <div className="mt-8 flex items-center gap-3">
               <a
@@ -85,9 +85,9 @@ export default function Index() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
-            { t: "Высокое качество", s: "Опытные ��ригады" },
+            { t: "Высокое качество", s: "Опытные бригады" },
             { t: "Гарантия", s: "до 5 лет" },
-            { t: "Сметы сегодня", s: "3 варианта" },
+            { t: "Сметы сегодня", s: "3 ��арианта" },
           ].map((i, idx) => (
             <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
               <div className="text-sm font-semibold">{i.t}</div>
@@ -146,7 +146,7 @@ export default function Index() {
           <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
           <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
             Тонкие пропорции, продуманная геометрия и благородная палитра
-            материалов. Каждая деталь имеет значение.
+            мат��риалов. Каждая деталь имеет значение.
           </p>
         </div>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
