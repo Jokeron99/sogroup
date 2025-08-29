@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { CheckCircle2, Gem, ShieldCheck, User } from "lucide-react";
+import SpriteSection from "../components/SpriteSection";
 
 export default function Index() {
   const images = useMemo(
@@ -56,7 +57,7 @@ export default function Index() {
               ремонт квартир в Москве и МО
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
-              РЕМОНТ КВАРТИР И ДОМОВ
+              РЕМОНТ КВАРТИР И ДОМО��
             </h1>
             <p className="mt-4 text-muted-foreground">
               Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
@@ -78,6 +79,52 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* CALCULATOR (ref mimic) */}
+      <section id="calc" className="container pt-[--section-gap]">
+        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+          <div className="rounded-xl border border-input bg-white p-6 shadow-soft">
+            <h3 className="text-2xl font-bold">Рассчитать стоимость ремонта</h3>
+            <p className="text-sm text-muted-foreground mt-2">Заполните 3 поля — займет до 2 минут</p>
+            <form className="mt-6 grid sm:grid-cols-2 gap-4">
+              <label className="text-sm">
+                <span className="mb-1 block text-muted-foreground">Тип помещения</span>
+                <select className="w-full rounded-md border border-input bg-transparent px-3 py-2">
+                  <option>Квартира</option>
+                  <option>Дом</option>
+                  <option>Офис</option>
+                </select>
+              </label>
+              <label className="text-sm">
+                <span className="mb-1 block text-muted-foreground">Площадь, м²</span>
+                <input type="number" min={10} placeholder="60" className="w-full rounded-md border border-input bg-transparent px-3 py-2" />
+              </label>
+              <label className="text-sm sm:col-span-2">
+                <span className="mb-1 block text-muted-foreground">Уровень отделки</span>
+                <select className="w-full rounded-md border border-input bg-transparent px-3 py-2">
+                  <option>Косметический</option>
+                  <option>Капитальный</option>
+                  <option>Дизайнерский</option>
+                </select>
+              </label>
+              <button type="button" className="sm:col-span-2 mt-2 inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 font-medium shadow-soft hover:opacity-90 transition">Рассчитать</button>
+            </form>
+          </div>
+          <div className="rounded-xl border border-input bg-secondary p-6">
+            <h4 className="font-semibold">Получите сметы уже сегодня</h4>
+            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
+            <form className="mt-4 grid gap-3">
+              <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
+              <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Телефон"/>
+              <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="E-mail"/>
+              <button className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-5 py-3 font-medium shadow-soft hover:opacity-90 transition">Получить сметы</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Decorative slice from reference */}
+      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={220} offsetY={1150} className="w-full" />
 
       {/* GALLERY */}
       <section id="works" className="container pt-[--section-gap]">
@@ -135,6 +182,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Decorative slice behind prices/tools */}
+      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={360} offsetY={4200} className="w-full" />
+
       {/* TESTIMONIALS */}
       <section id="testimonials" className="container pt-[--section-gap]">
         <h2 className="font-display text-3xl sm:text-4xl mb-8">Отзывы</h2>
@@ -146,7 +196,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три вар��анта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
+            text="Мы предложим три вар��анта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая б��онза."
           />
           <DialogCard
             role="Клиент"
@@ -182,6 +232,9 @@ export default function Index() {
           ))}
         </div>
       </section>
+
+      {/* Decorative slice with phone mockup */}
+      <SpriteSection src="https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2F3eae7f7774384a559e59d3158ef9795b?format=webp&width=1920" height={500} offsetY={6100} className="w-full" />
 
       {/* CTA */}
       <section id="cta" className="container pt-[--section-gap]">
