@@ -128,7 +128,7 @@ export default function Index() {
             </form>
           </div>
           <div className="rounded-xl border border-input bg-secondary p-6">
-            <h4 className="font-semibold">Получите сметы уже сег��дня</h4>
+            <h4 className="font-semibold">Получите сметы уже сегодня</h4>
             <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
             <form className="mt-4 grid gap-3">
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
@@ -145,7 +145,7 @@ export default function Index() {
         <div className="flex items-end justify-between gap-6">
           <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
           <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
-            Тонкие пропорции, прод��манная геометрия и благородная палитра
+            Тонкие пропорции, прод���манная геометрия и благородная палитра
             материалов. Каждая деталь имеет значение.
           </p>
         </div>
