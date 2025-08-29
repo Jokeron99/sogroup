@@ -40,29 +40,28 @@ export default function Index() {
 
   return (
     <div className="[--section-gap:5rem]">
-      {/* HERO */}
+      {/* HERO (Behance screenshot background) */}
       <section
         className="relative min-h-[80vh] flex items-end"
         style={{
           backgroundImage:
-            "linear-gradient(to top, hsl(var(--background)) 0%, transparent 35%), url(https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2000)",
+            "linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 30%, transparent 55%), url(https://cdn.builder.io/api/v1/image/assets%2F722e517b2f1348adbcd872b20bb5c2fe%2Fd9fe1fea66c048098065eef567aa370f?format=webp&width=1600)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="container pb-20">
-          <div className="max-w-3xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-muted-foreground mb-6">
-              Бутик-студия дизайнерского ремонта
+        <div className="container pb-16">
+          <div className="max-w-2xl">
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-4">
+              ремонт квартир в Москве и МО
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05]">
-              Ремонт, который отражает ваш характер
+            <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-foreground">
+              РЕМОНТ КВАРТИР И ДОМОВ
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
-              Чистые линии, дорогие материалы и персональный подход. Мы
-              создаём пространства, которые говорят за вас.
+            <p className="mt-4 text-muted-foreground">
+              Калькулятор стоимости за 2 минуты. Получите сметы уже сегодня.
             </p>
-            <div className="mt-10 flex items-center gap-4">
+            <div className="mt-8 flex items-center gap-3">
               <a
                 href="#cta"
                 className="inline-flex items-center rounded-full bg-primary text-primary-foreground px-6 py-3 shadow-soft hover:opacity-90 transition"
@@ -70,10 +69,10 @@ export default function Index() {
                 Оставить заявку
               </a>
               <a
-                href="#portfolio"
-                className="inline-flex items-center rounded-full px-6 py-3 border border-border hover:border-foreground/40 transition"
+                href="#calc"
+                className="inline-flex items-center rounded-full px-6 py-3 border border-input bg-white hover:border-foreground/40 transition"
               >
-                Портфолио
+                Рассчитать стоимость
               </a>
             </div>
           </div>
@@ -81,7 +80,7 @@ export default function Index() {
       </section>
 
       {/* GALLERY */}
-      <section id="portfolio" className="container pt-[--section-gap]">
+      <section id="works" className="container pt-[--section-gap]">
         <div className="flex items-end justify-between gap-6">
           <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
           <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
@@ -147,7 +146,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Мы предложим три варианта планировки и подбор материалов: тёплый камень, текстурное дерево, мягкая бронза."
+            text="Мы предложим три варианта планировки и подбор м��териалов: тёплый камень, текстурное дерево, мягкая бронза."
           />
           <DialogCard
             role="Клиент"
@@ -168,7 +167,7 @@ export default function Index() {
           <div className="p-8 md:p-12 grid md:grid-cols-2 gap-10">
             <div>
               <h3 className="font-display text-2xl sm:text-3xl">
-                Оставьте заявку — и мы разработаем интерьер бесплатно
+                Оставьте заявку — и мы разработаем интерьер беспл��тно
               </h3>
               <p className="mt-4 text-muted-foreground max-w-prose">
                 Бриф, планировочные решения и концепция в подарок. Начните с короткой заявки — мы свяжемся в течение одного рабочего дня.
@@ -209,7 +208,7 @@ export default function Index() {
                 Отправить заявку
               </button>
               <p className="text-xs text-muted-foreground">
-                Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных
+                Нажимая кно��ку, вы соглашаетесь с условиями обработки персональных данных
               </p>
             </form>
           </div>
