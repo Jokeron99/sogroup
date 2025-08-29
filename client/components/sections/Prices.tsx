@@ -9,7 +9,7 @@ export default function Prices() {
 
   return (
     <section id="prices" className="container pt-[--section-gap]">
-      <h2 className="text-3xl font-bold mb-8">Цены на ремонт</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 uppercase tracking-tight">Цены на ремонт квартиры в 2021 году</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {cards.map((c, i) => (
           <article
