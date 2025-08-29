@@ -9,7 +9,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Современная гостиная с панорамными окнами",
+        alt: "Современная гостиная с панорамны��и окнами",
       },
       {
         src:
@@ -87,7 +87,7 @@ export default function Index() {
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
             { t: "Высокое качество", s: "Опытные бригады" },
             { t: "Гарантия", s: "до 5 лет" },
-            { t: "Сметы сегодня", s: "3 варианта" },
+            { t: "Сметы сего��ня", s: "3 варианта" },
           ].map((i, idx) => (
             <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
               <div className="text-sm font-semibold">{i.t}</div>
@@ -128,7 +128,7 @@ export default function Index() {
             </form>
           </div>
           <div className="rounded-xl border border-input bg-secondary p-6">
-            <h4 className="font-semibold">Получите сметы уже сегодня</h4>
+            <h4 className="font-semibold">Получите сметы уже сег��дня</h4>
             <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
             <form className="mt-4 grid gap-3">
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
@@ -218,7 +218,7 @@ export default function Index() {
           <DialogCard
             role="Дизайнер"
             accent
-            text="Рады, что получилось передать ваш характер. Всегда на связи, если зах��тите обновить детали."
+            text="Рады, что получилось передать ваш характер. Всегда на связи, если захотите обновить детали."
           />
         </div>
       </section>
