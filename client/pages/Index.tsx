@@ -86,8 +86,8 @@ export default function Index() {
           {[
             { t: "Соблюдаем сроки", s: "Фиксируем в договоре" },
             { t: "Высокое качество", s: "Опытные бригады" },
-            { t: "Гарантия", s: "до 5 лет" },
-            { t: "Сметы сего��ня", s: "3 варианта" },
+            { t: "Гаран��ия", s: "до 5 лет" },
+            { t: "Сметы сегодня", s: "3 варианта" },
           ].map((i, idx) => (
             <div key={idx} className="rounded-xl border border-input bg-white/90 backdrop-blur p-4 shadow-soft">
               <div className="text-sm font-semibold">{i.t}</div>
@@ -145,7 +145,7 @@ export default function Index() {
         <div className="flex items-end justify-between gap-6">
           <h2 className="font-display text-3xl sm:text-4xl">Наши проекты</h2>
           <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">
-            Тонкие пропорции, продуманная геометрия и благородная палитра
+            Тонкие пропорции, прод��манная геометрия и благородная палитра
             материалов. Каждая деталь имеет значение.
           </p>
         </div>
