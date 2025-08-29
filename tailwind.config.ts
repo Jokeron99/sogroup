@@ -57,6 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        graphite: "hsl(var(--graphite))",
+        sand: "hsl(var(--sand))",
+        warm: "hsl(var(--warm))",
+        bronze: {
+          DEFAULT: "hsl(var(--bronze))",
+          foreground: "hsl(var(--bronze-foreground))",
+        },
+      },
+      fontFamily: {
+        display: ['"Playfair Display"', "serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        soft: "0 10px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06)",
       },
       borderRadius: {
         lg: "var(--radius)",
