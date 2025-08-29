@@ -128,7 +128,7 @@ export default function Index() {
           </div>
           <div className="rounded-xl border border-input bg-secondary p-6">
             <h4 className="font-semibold">Получите сметы уже сегодня</h4>
-            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сме��ы на почту</p>
+            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
             <form className="mt-4 grid gap-3">
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Телефон"/>
@@ -194,6 +194,8 @@ export default function Index() {
           />
         </div>
       </section>
+
+      <Technologies />
 
       {/* TESTIMONIALS */}
       <section id="testimonials" className="container pt-[--section-gap]">
