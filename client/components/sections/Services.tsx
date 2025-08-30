@@ -14,17 +14,19 @@ export default function Services() {
         <p className="hidden sm:block text-sm text-muted-foreground max-w-sm">Создаём пространства с характером брендов уровня haute couture.</p>
       </div>
       <div className="mt-10 grid sm:grid-cols-3 gap-6">
-        {items.map((i) => (
-          <article key={i.t} className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft">
-            <div className="absolute inset-0 pointer-events-none" style={{background:"linear-gradient(180deg,transparent,hsla(0,0%,100%,0.02))"}}/>
-            <div className="text-xl font-medium">{i.t}</div>
-            <div className="mt-2 text-sm text-muted-foreground">{i.s}</div>
-            <img src={i.img} alt="" className="mt-6 h-40 w-full rounded-xl object-cover border border-border/60" loading="lazy"/>
-            <a href="#consult" className="mt-6 inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition">
-              Подробнее
-              <span className="inline-block h-px w-8 bg-muted-foreground group-hover:bg-foreground transition"/>
-            </a>
-          </article>
+        {items.map((i, idx) => (
+          <Reveal key={i.t} delay={idx * 0.05}>
+            <article className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft will-change-transform">
+              <div className="absolute inset-0 pointer-events-none" style={{background:"linear-gradient(180deg,transparent,hsla(0,0%,100%,0.02))"}}/>
+              <div className="text-xl font-medium">{i.t}</div>
+              <div className="mt-2 text-sm text-muted-foreground">{i.s}</div>
+              <img src={i.img} alt="" className="mt-6 h-40 w-full rounded-xl object-cover border border-border/60" loading="lazy"/>
+              <a href="#consult" className="mt-6 inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition">
+                Подробнее
+                <span className="inline-block h-px w-8 bg-muted-foreground group-hover:bg-foreground transition"/>
+              </a>
+            </article>
+          </Reveal>
         ))}
       </div>
     </section>
