@@ -9,7 +9,7 @@ export default function Index() {
       {
         src:
           "https://images.pexels.com/photos/7046173/pexels-photo-7046173.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600",
-        alt: "Современная гостиная с ��анорамными окнами",
+        alt: "Современная гостиная с панорамными окнами",
       },
       {
         src:
@@ -128,8 +128,8 @@ export default function Index() {
             </form>
           </div>
           <div className="rounded-xl border border-input bg-secondary p-6">
-            <h4 className="font-semibold">Получите сме��ы уже сегодня</h4>
-            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышлем 3 варианта сметы на почту</p>
+            <h4 className="font-semibold">Получите сметы уже сегодня</h4>
+            <p className="text-sm text-muted-foreground mt-2">Оставьте контакты — вышл��м 3 варианта сметы на почту</p>
             <form className="mt-4 grid gap-3">
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Ваше имя"/>
               <input className="rounded-md border border-input bg-white px-3 py-2" placeholder="Телефон"/>
@@ -176,7 +176,7 @@ export default function Index() {
           <Benefit
             icon={<CheckCircle2 className="h-6 w-6" />}
             title="Работаем под ключ"
-            text="От идеи и проектирования до строительно-отделочных работ и комплектации."
+            text="От идеи и проектирования до строительно-отделочных работ и компле��тации."
           />
           <Benefit
             icon={<Gem className="h-6 w-6" />}
