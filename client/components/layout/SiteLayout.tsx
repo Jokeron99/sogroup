@@ -60,7 +60,7 @@ export default function SiteLayout() {
         </div>
         <div className="border-t border-border/70 py-6 text-xs text-muted-foreground">
           <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>© {new Date().getFullYear()} SO Group. Все права защ��щены.</div>
+            <div>© {new Date().getFullYear()} SO Group. Все права защищены.</div>
             <div className="flex items-center gap-6">
               <a href="#" className="hover:underline">Политика конфиденциальности</a>
               <a href="#" className="hover:underline">Договор оферты</a>
