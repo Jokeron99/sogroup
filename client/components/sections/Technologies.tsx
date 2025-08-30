@@ -4,7 +4,7 @@ export default function Technologies() {
       <h2 className="text-2xl sm:text-3xl font-bold mb-6 uppercase">Технологии и производство</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {[
-          { t: "Собственное СКЛАД", s: "Логистика и хранение" },
+          { t: "Собственный склад", s: "Логистика и хранение" },
           { t: "Контроль качества", s: "Технадзор на всех этапах" },
           { t: "Сертифицированные материалы", s: "Документы по запросу" },
         ].map((i, idx) => (
