@@ -5,6 +5,9 @@ const steps = [
   { n: "04", t: "Реализация", s: "Отделка, комплектация, надзор", img: "https://images.pexels.com/photos/4792491/pexels-photo-4792491.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600" },
 ];
 
+import Reveal from "@/components/motion/Reveal";
+import useParallax from "@/hooks/useParallax";
+
 export default function Process() {
   return (
     <section className="container py-[--section-gap]">
