@@ -1,11 +1,9 @@
 export default function HeroLuxury() {
   return (
     <section className="relative overflow-hidden">
-      <img src="https://images.pexels.com/photos/6587896/pexels-photo-6587896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1920" alt="Интерьер класса люкс" className="absolute inset-0 w-full h-full object-cover opacity-[0.22]"/>
-      <div className="absolute inset-0 bg-[radial-gradient(1200px_400px_at_50%_-10%,hsl(var(--primary)/0.12),transparent_60%)]" />
-      <div className="absolute inset-0" aria-hidden>
-        <svg className="absolute inset-0 w-full h-full opacity-[0.08]" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
-      </div>
+      {/* Parallax layers */}
+      {/* @ts-expect-error - imported dynamically below */}
+      <ParallaxLayers />
       <div className="container relative py-28 sm:py-36">
         <div className="max-w-3xl">
           <div className="text-xs tracking-[0.35em] uppercase text-muted-foreground/80">SO GROUP — premium interiors</div>
