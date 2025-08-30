@@ -15,7 +15,7 @@ export default function HeroLuxury() {
             Квартиры, дома и офисы в эстетике премиальных брендов. Тонкие пропорции, благородные материалы, безупречная реализация.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">
-            <a href="#consult" className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-background bg-primary hover:brightness-110 transition shadow-[0_8px_24px_hsl(var(--primary)/0.25)]">��аписаться на консультацию</a>
+            <a href="#consult" className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-background bg-primary hover:brightness-110 transition shadow-[0_8px_24px_hsl(var(--primary)/0.25)]">Записаться н�� консультацию</a>
             <a href="#projects" className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium border border-border hover:border-foreground/50 transition">Портфолио</a>
           </div>
         </div>
