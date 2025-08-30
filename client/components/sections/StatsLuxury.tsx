@@ -5,6 +5,8 @@ const stats = [
   { n: "5 лет", t: "гарантия" },
 ];
 
+import Reveal from "@/components/motion/Reveal";
+
 export default function StatsLuxury() {
   return (
     <section className="container py-[--section-gap]">
