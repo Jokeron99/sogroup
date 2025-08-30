@@ -3,6 +3,7 @@ import Services from "../components/sections/Services";
 import CaseStudies from "../components/sections/CaseStudies";
 import Process from "../components/sections/Process";
 import Testimonials from "../components/sections/Testimonials";
+import StatsLuxury from "../components/sections/StatsLuxury";
 import CtaLuxury from "../components/sections/CtaLuxury";
 
 export default function Index() {
@@ -11,6 +12,7 @@ export default function Index() {
       <HeroLuxury />
       <Services />
       <CaseStudies />
+      <StatsLuxury />
       <Process />
       <Testimonials />
       <CtaLuxury />
