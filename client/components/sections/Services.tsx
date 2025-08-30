@@ -1,7 +1,7 @@
 const items = [
-  { t: "Квартиры", s: "Авторские интерьеры под ключ" },
-  { t: "Дома", s: "Благородные материалы и свет" },
-  { t: "Офисы", s: "Репутация и статус в деталях" },
+  { t: "Квартиры", s: "Авторские интерьеры под ключ", img: "https://images.pexels.com/photos/6587896/pexels-photo-6587896.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600" },
+  { t: "Дома", s: "Благородные материалы и свет", img: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600" },
+  { t: "Офисы", s: "Репутация и статус в деталях", img: "https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600" },
 ];
 
 export default function Services() {
@@ -17,7 +17,7 @@ export default function Services() {
             <div className="absolute inset-0 pointer-events-none" style={{background:"linear-gradient(180deg,transparent,hsla(0,0%,100%,0.02))"}}/>
             <div className="text-xl font-medium">{i.t}</div>
             <div className="mt-2 text-sm text-muted-foreground">{i.s}</div>
-            <div className="mt-6 h-40 rounded-xl border border-border/60 bg-gradient-to-b from-foreground/5 to-transparent"/>
+            <img src={i.img} alt="" className="mt-6 h-40 w-full rounded-xl object-cover border border-border/60" loading="lazy"/>
             <a href="#consult" className="mt-6 inline-flex items-center gap-2 text-sm text-muted-foreground group-hover:text-foreground transition">
               Подробнее
               <span className="inline-block h-px w-8 bg-muted-foreground group-hover:bg-foreground transition"/>
