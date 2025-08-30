@@ -5,7 +5,7 @@ const quotes = [
 
 export default function Testimonials() {
   return (
-    <section className="container py-[--section-gap]">
+    <section id="testimonials" className="container py-[--section-gap]">
       <h2 className="font-display text-3xl sm:text-4xl tracking-tight">Отзывы</h2>
       <div className="mt-10 grid md:grid-cols-2 gap-6">
         {quotes.map((c, i) => (
