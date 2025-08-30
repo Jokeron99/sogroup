@@ -9,14 +9,29 @@ type Props = {
   className?: string;
 };
 
-export default function CroppedImg({ src, width, height, cropW, cropH, x, y, className }: Props) {
+export default function CroppedImg({
+  src,
+  width,
+  height,
+  cropW,
+  cropH,
+  x,
+  y,
+  className,
+}: Props) {
   // Render a cropped area from a big source image using object-position
   // We set the wrapper size to "width x height" and scale the image so that
   // 1 CSS pixel corresponds to the source crop size, then shift it with object-position
   return (
     <div
       className={className}
-      style={{ width, height, overflow: "hidden", position: "relative", borderRadius: 12 }}
+      style={{
+        width,
+        height,
+        overflow: "hidden",
+        position: "relative",
+        borderRadius: 12,
+      }}
     >
       <img
         src={src}

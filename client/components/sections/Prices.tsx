@@ -1,15 +1,36 @@
-type Card = { title: string; price: string; features: string[]; cta?: string; featured?: boolean };
+type Card = {
+  title: string;
+  price: string;
+  features: string[];
+  cta?: string;
+  featured?: boolean;
+};
 
 export default function Prices() {
   const cards: Card[] = [
-    { title: "Косметический", price: "от 6 000 ₽/м²", features: ["Штукатурка/покраска", "Замена покрытий", "Сроки от 14 дней"] },
-    { title: "Капитальный", price: "от 9 000 ₽/м²", features: ["Перепланировка", "Чистовые материалы", "Сроки от 30 дней"], featured: true },
-    { title: "Дизайнерский", price: "от 15 000 ₽/м²", features: ["Авторский надзор", "Премиум-материалы", "Сроки от 45 дней"] },
+    {
+      title: "Косметический",
+      price: "от 6 000 ₽/м²",
+      features: ["Штукатурка/покраска", "Замена покрытий", "Сроки от 14 дней"],
+    },
+    {
+      title: "Капитальный",
+      price: "от 9 000 ₽/м²",
+      features: ["Перепланировка", "Чистовые материалы", "Сроки от 30 дней"],
+      featured: true,
+    },
+    {
+      title: "Дизайнерский",
+      price: "от 15 000 ₽/м²",
+      features: ["Авторский надзор", "Премиум-материалы", "Сроки от 45 дней"],
+    },
   ];
 
   return (
     <section id="prices" className="container pt-[--section-gap]">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-8 uppercase tracking-tight">Цены на ремонт квартиры в 2021 году</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 uppercase tracking-tight">
+        Цены на ремонт квартиры в 2021 году
+      </h2>
       <div className="grid md:grid-cols-3 gap-6">
         {cards.map((c, i) => (
           <article
@@ -19,10 +40,14 @@ export default function Prices() {
             }`}
           >
             {c.featured && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#ff5c5c] text-white text-xs px-3 py-1 shadow">Хит</div>
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#ff5c5c] text-white text-xs px-3 py-1 shadow">
+                Хит
+              </div>
             )}
             <div className="text-lg font-semibold">{c.title}</div>
-            <div className="mt-2 text-2xl font-extrabold text-primary">{c.price}</div>
+            <div className="mt-2 text-2xl font-extrabold text-primary">
+              {c.price}
+            </div>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               {c.features.map((f, idx) => (
                 <li key={idx} className="flex items-center gap-2">

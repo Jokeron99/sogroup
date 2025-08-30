@@ -1,7 +1,10 @@
 import { PropsWithChildren } from "react";
 import { motion } from "framer-motion";
 
-export default function Reveal({ children, delay = 0 }: PropsWithChildren & { delay?: number }) {
+export default function Reveal({
+  children,
+  delay = 0,
+}: PropsWithChildren & { delay?: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}

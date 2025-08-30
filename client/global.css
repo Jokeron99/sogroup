@@ -16,8 +16,15 @@ body::before {
   opacity: 0.06;
 }
 
-h1,h2,.font-display {
-  font-feature-settings: "liga" 1, "kern" 1, "dlig" 1, "lnum" 1, "pnum" 1;
+h1,
+h2,
+.font-display {
+  font-feature-settings:
+    "liga" 1,
+    "kern" 1,
+    "dlig" 1,
+    "lnum" 1,
+    "pnum" 1;
 }
 
 @layer base {
