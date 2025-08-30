@@ -13,7 +13,7 @@ export default function HeroLuxury() {
             Дизайнерский ремонт класса люкс
           </h1>
           <p className="mt-5 text-lg text-muted-foreground max-w-2xl">
-            Квартиры, дома и офисы в эстетике премиальных брендов. Тонкие пропорции, благ��родные материалы, безупречная реализация.
+            Квартиры, дома и офисы в эстетике премиальных брендов. Тонкие пропорции, благородные материалы, безупречная реализация.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3">
             <a href="#consult" className="group relative inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-background bg-primary overflow-hidden transition shadow-[0_8px_24px_hsl(var(--primary)/0.25)] hover:brightness-110">
