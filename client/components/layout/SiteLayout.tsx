@@ -4,7 +4,7 @@ import { Instagram, Phone, Send } from "lucide-react";
 export default function SiteLayout() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border/70">
+      <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border/60">
         <div className="container flex items-center justify-between h-16">
           <Link to="/" className="group inline-flex items-baseline gap-2">
             <span className="text-xl font-semibold tracking-tight">SO Group</span>
