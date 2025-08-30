@@ -48,40 +48,42 @@ export default function CaseStudies() {
       </div>
       <div className="mt-10 grid md:grid-cols-3 gap-6">
         {projects.map((p, i) => (
-          <Dialog key={i}>
-            <DialogTrigger asChild>
-              <button className="group w-full text-left overflow-hidden rounded-2xl border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary/40">
-                <img src={p.cover} alt={p.t} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"/>
-                <div className="p-4 flex items-center justify-between text-sm">
-                  <div>
-                    <div className="font-medium">{p.t}</div>
-                    <div className="text-muted-foreground">{p.s}</div>
+          <Reveal key={i} delay={i * 0.05}>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="group w-full text-left overflow-hidden rounded-2xl border border-border bg-card focus:outline-none focus:ring-2 focus:ring-primary/40 will-change-transform">
+                  <img src={p.cover} alt={p.t} className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                  <div className="p-4 flex items-center justify-between text-sm">
+                    <div>
+                      <div className="font-medium">{p.t}</div>
+                      <div className="text-muted-foreground">{p.s}</div>
+                    </div>
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border group-hover:border-foreground/50 transition">→</span>
                   </div>
-                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border group-hover:border-foreground/50 transition">→</span>
+                </button>
+              </DialogTrigger>
+              <DialogContent className="max-w-3xl">
+                <DialogHeader>
+                  <DialogTitle className="font-display text-2xl">{p.t}</DialogTitle>
+                  <DialogDescription>{p.s}</DialogDescription>
+                </DialogHeader>
+                <p className="text-sm text-muted-foreground">{p.desc}</p>
+                <div className="mt-4 relative">
+                  <Carousel className="w-full" opts={{ loop: true }}>
+                    <CarouselContent>
+                      {p.photos.map((src, idx) => (
+                        <CarouselItem key={idx}>
+                          <img src={src} alt={`${p.t} ${idx + 1}`} className="aspect-[16/9] w-full object-cover rounded-lg"/>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="bg-background/60 backdrop-blur border-border hover:bg-background" />
+                    <CarouselNext className="bg-background/60 backdrop-blur border-border hover:bg-background" />
+                  </Carousel>
                 </div>
-              </button>
-            </DialogTrigger>
-            <DialogContent className="max-w-3xl">
-              <DialogHeader>
-                <DialogTitle className="font-display text-2xl">{p.t}</DialogTitle>
-                <DialogDescription>{p.s}</DialogDescription>
-              </DialogHeader>
-              <p className="text-sm text-muted-foreground">{p.desc}</p>
-              <div className="mt-4 relative">
-                <Carousel className="w-full" opts={{ loop: true }}>
-                  <CarouselContent>
-                    {p.photos.map((src, idx) => (
-                      <CarouselItem key={idx}>
-                        <img src={src} alt={`${p.t} ${idx + 1}`} className="aspect-[16/9] w-full object-cover rounded-lg"/>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="bg-background/60 backdrop-blur border-border hover:bg-background" />
-                  <CarouselNext className="bg-background/60 backdrop-blur border-border hover:bg-background" />
-                </Carousel>
-              </div>
-            </DialogContent>
-          </Dialog>
+              </DialogContent>
+            </Dialog>
+          </Reveal>
         ))}
       </div>
     </section>
