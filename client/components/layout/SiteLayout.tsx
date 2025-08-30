@@ -7,8 +7,8 @@ export default function SiteLayout() {
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-border/60">
         <div className="container flex items-center justify-between h-16">
           <Link to="/" className="group inline-flex items-baseline gap-2">
-            <span className="text-xl font-semibold tracking-tight">SO Group</span>
-            <span className="hidden sm:inline text-xs uppercase tracking-[0.25em] text-muted-foreground group-hover:text-foreground transition-colors">group</span>
+            <span className="text-xl font-display tracking-tight">SO Group</span>
+            <span className="hidden sm:inline text-[10px] uppercase tracking-[0.35em] text-muted-foreground group-hover:text-foreground transition-colors">interiors</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm">
             <a href="#calc" className="text-muted-foreground hover:text-foreground transition-colors">Калькулятор</a>
@@ -17,7 +17,7 @@ export default function SiteLayout() {
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
             <a href="#contacts" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </nav>
-          <a href="#cta" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold text-white bg-gradient-to-b from-sky-400 to-blue-600 hover:brightness-105 transition shadow-[0_8px_18px_rgba(29,78,216,.25)]">
+          <a href="#consult" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-background bg-primary hover:brightness-110 transition shadow-[0_8px_24px_hsl(var(--primary)/0.25)]">
             <span>Оставить заявку</span>
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function SiteLayout() {
         </div>
         <div className="border-t border-border/70 py-6 text-xs text-muted-foreground">
           <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div>© {new Date().getFullYear()} SO Group. Все права защищены.</div>
+            <div>© {new Date().getFullYear()} SO Group. Все права защ��щены.</div>
             <div className="flex items-center gap-6">
               <a href="#" className="hover:underline">Политика конфиденциальности</a>
               <a href="#" className="hover:underline">Договор оферты</a>
