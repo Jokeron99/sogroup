@@ -1,5 +1,5 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,46 +12,46 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Blue/white brand (Behance ref) */
-    --background: 0 0% 100%;
-    --foreground: 220 16% 14%;
+    /* Luxury dark palette */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 16% 14%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 16% 14%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 205 90% 54%; /* vivid blue */
-    --primary-foreground: 0 0% 100%;
+    --primary: 43 61% 55%; /* gold */
+    --primary-foreground: 0 0% 6%;
 
-    --secondary: 205 100% 97%; /* very light blue */
-    --secondary-foreground: 220 16% 20%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 210 16% 94%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 205 90% 54%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 61% 55%;
+    --accent-foreground: 0 0% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 205 90% 54%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 43 61% 55%;
 
     --radius: 0.75rem;
 
     /* Sidebar (unused) */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 43 61% 55%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 43 61% 55%;
   }
 
   .dark {
@@ -101,6 +101,6 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: Roboto, ui-sans-serif, system-ui, sans-serif;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   }
 }

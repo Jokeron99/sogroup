@@ -66,8 +66,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ["Roboto", "ui-sans-serif", "system-ui", "sans-serif"],
-        sans: ["Roboto", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Playfair Display", "ui-serif", "Georgia", "serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
         soft: "0 10px 30px rgba(0,0,0,0.08), 0 2px 8px rgba(0,0,0,0.06)",
