@@ -4,6 +4,8 @@ const items = [
   { t: "Офисы", s: "Репутация и статус в деталях", img: "https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1600" },
 ];
 
+import Reveal from "@/components/motion/Reveal";
+
 export default function Services() {
   return (
     <section id="services" className="container py-[--section-gap]">
