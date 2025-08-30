@@ -37,6 +37,8 @@ const projects = [
   },
 ];
 
+import Reveal from "@/components/motion/Reveal";
+
 export default function CaseStudies() {
   return (
     <section id="projects" className="container py-[--section-gap]">
