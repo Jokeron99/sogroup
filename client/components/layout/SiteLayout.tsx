@@ -11,10 +11,10 @@ export default function SiteLayout() {
             <span className="hidden sm:inline text-[10px] uppercase tracking-[0.35em] text-muted-foreground group-hover:text-foreground transition-colors">interiors</span>
           </Link>
           <nav className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#calc" className="text-muted-foreground hover:text-foreground transition-colors">Калькулятор</a>
-            <a href="#works" className="text-muted-foreground hover:text-foreground transition-colors">Работы</a>
-            <a href="#prices" className="text-muted-foreground hover:text-foreground transition-colors">Цены</a>
+            <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">Услуги</a>
+            <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">Проекты</a>
             <a href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">Отзывы</a>
+            <a href="#consult" className="text-muted-foreground hover:text-foreground transition-colors">Консультация</a>
             <a href="#contacts" className="text-muted-foreground hover:text-foreground transition-colors">Контакты</a>
           </nav>
           <a href="#consult" className="inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-background bg-primary hover:brightness-110 transition shadow-[0_8px_24px_hsl(var(--primary)/0.25)]">
