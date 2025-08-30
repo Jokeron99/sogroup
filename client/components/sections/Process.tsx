@@ -13,18 +13,23 @@ export default function Process() {
     <section className="container py-[--section-gap]">
       <h2 className="font-display text-3xl sm:text-4xl tracking-tight">Как мы работаем</h2>
       <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {steps.map((s) => (
-          <div key={s.n} className="rounded-2xl border border-border bg-card p-6">
-            <div className="text-sm text-muted-foreground">{s.n}</div>
-            <div className="mt-2 text-lg font-medium">{s.t}</div>
-            <div className="mt-2 text-sm text-muted-foreground">{s.s}</div>
-            <div className="mt-6 h-px bg-border"/>
-            <div className="relative mt-6 overflow-hidden rounded-xl border border-border/60">
-              <img src={s.img} alt={s.t} className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy"/>
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/5 to-transparent"/>
-            </div>
-          </div>
-        ))}
+        {steps.map((s, idx) => {
+          const par = useParallax(0.06);
+          return (
+            <Reveal key={s.n} delay={idx * 0.05}>
+              <div className="rounded-2xl border border-border bg-card p-6 will-change-transform">
+                <div className="text-sm text-muted-foreground">{s.n}</div>
+                <div className="mt-2 text-lg font-medium">{s.t}</div>
+                <div className="mt-2 text-sm text-muted-foreground">{s.s}</div>
+                <div className="mt-6 h-px bg-border"/>
+                <div ref={par.ref} style={par.style} className="relative mt-6 overflow-hidden rounded-xl border border-border/60 will-change-transform">
+                  <img src={s.img} alt={s.t} className="h-36 w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy"/>
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/5 to-transparent"/>
+                </div>
+              </div>
+            </Reveal>
+          );
+        })}
       </div>
     </section>
   );
